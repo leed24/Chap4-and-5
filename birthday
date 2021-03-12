@@ -9,128 +9,126 @@ public class birthday {
 	    int fmonth = input.nextInt();
 	    System.out.print("What is todays day: ");
 	    int fday = input.nextInt();	
+        
+        if (fmonth == 2){
+            fday+=31;
+       }
+       else if (fmonth==3){
+            fday += 59;
+       }
+       else if (fmonth==4){
+            fday += 90;
+       }
+       else if (fmonth ==5){
+            fday += 120;
+       }
+       else if (fmonth==6){
+            fday += 151;
+       }
+       else if (fmonth == 7){
+            fday += 181;
+       }
+       else if (fmonth == 8){
+            fday += 212;
+       }
+       else if (fmonth == 9){
+            fday += 242;
+       }
+       else if (fmonth == 10){
+            fday += 273;
+       }
+       else if (fmonth == 11){
+            fday += 303;
+       }
+       else if (fmonth == 12){
+        fday += 334;
+       }
+       today = fday;
 	    System.out.print ("First person, what month is your birthday(number): ");
     	int month = input.nextInt();
     	System.out.print ("What day of the month is it on: ");
 	    int day = input.nextInt();
+        if (month == 2){
+            day +=31;
+       }
+       else if (month==3){
+            day += 59;
+       }
+       else if (month==4){
+            day += 90;
+       }
+       else if (month ==5){
+            day += 120;
+       }
+       else if (month==6){
+            day += 151;
+       }
+       else if (month == 7){
+            day += 181;
+       }
+       else if (month == 8){
+            day += 212;
+       }
+       else if (month == 9){
+            day += 242;
+       }
+       else if (month == 10){
+           day += 273;
+       }
+       else if (month == 11){
+            day += 303;
+       }
+       else if (month == 12){
+            day += 334;
+       }
+        birthone= day;
 	    System.out.print("Second person, what month is your birthday(number): ");
     	int smonth = input.nextInt();
 	    System.out.print("What day of the month is it on: ");
         int sday = input.nextInt();
-        int x;
-        if (fmonth == 2){
-             x=31;
-        }
-        else if (fmonth==3){
-             x= 59;
-        }
-        else if (fmonth==4){
-             x = 90;
-        }
-        else if (fmonth ==5){
-             x = 120;
-        }
-        else if (fmonth==6){
-             x = 151;
-        }
-        else if (fmonth == 7){
-             x = 181;
-        }
-        else if (fmonth == 8){
-             x = 212;
-        }
-        else if (fmonth == 9){
-             x = 242;
-        }
-        else if (fmonth == 10){
-             x = 273;
-        }
-        else if (fmonth == 11){
-             x = 303;
-        }
-        else if (fmonth == 12){
-             x = 334;
-        }
-        today = x + fday;
-        int y;
-        if (month == 2){
-            y=31;
-       }
-       else if (month==3){
-            y= 59;
-       }
-       else if (month==4){
-            y = 90;
-       }
-       else if (month ==5){
-            y = 120;
-       }
-       else if (month==6){
-            y = 151;
-       }
-       else if (month == 7){
-            y = 181;
-       }
-       else if (month == 8){
-            y = 212;
-       }
-       else if (month == 9){
-            y = 242;
-       }
-       else if (month == 10){
-            y = 273;
-       }
-       else if (month == 11){
-            y = 303;
-       }
-       else if (month == 12){
-            y = 334;
-       }
-        birthone= y+day;
-        int z;
         if (smonth == 2){
-            z=31;
+            sday+=31;
        }
        else if (smonth==3){
-            z= 59;
+        sday+= 59;
        }
        else if (smonth==4){
-            z = 90;
+        sday += 90;
        }
        else if (smonth ==5){
-            z = 120;
+            sday += 120;
        }
        else if (smonth==6){
-            z = 151;
+            sday += 151;
        }
        else if (smonth == 7){
-            z = 181;
+            sday+= 181;
        }
        else if (smonth == 8){
-            z = 212;
+           sday += 212;
        }
        else if (smonth == 9){
-            z = 242;
+            sday += 242;
        }
        else if (smonth == 10){
-            z = 273;
+            sday += 273;
        }
        else if (smonth == 11){
-            z = 303;
+            sday += 303;
        }
        else if(smonth == 12){
-            z = 334;
+            sday += 334;
        }
-       birthtwo= z+sday;
+       birthtwo= sday;
        System.out.println("It will be "+(birthone-today)+" days until the first person's birthday.");
        System.out.println("It will be "+(birthtwo-today)+" days until the first person's birthday.");
        int first = birthone-today;
-       int second= birthtwo-today;
+       int second= birthone-today;
        if (first>second){
-           System.out.print("The second persons birthday is sooner.");
+           System.out.print("The second person's birthday is sooner");
        }
-       else {
-        System.out.print("The first persons birthday is sooner.");
+       else{
+        System.out.print("The first person's birthday is sooner");
        }
     }
 }
