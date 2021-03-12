@@ -1,0 +1,136 @@
+import java.util.*;
+public class birthday {
+    public static void main(String [] args){
+        Scanner input = new Scanner (System.in);
+        int today;
+	    int birthone;
+	    int birthtwo;
+	    System.out.print("What is todays month(number): ");
+	    int fmonth = input.nextInt();
+	    System.out.print("What is todays day: ");
+	    int fday = input.nextInt();	
+	    System.out.print ("First person, what month is your birthday(number): ");
+    	int month = input.nextInt();
+    	System.out.print ("What day of the month is it on: ");
+	    int day = input.nextInt();
+	    System.out.print("Second person, what month is your birthday(number): ");
+    	int smonth = input.nextInt();
+	    System.out.print("What day of the month is it on: ");
+        int sday = input.nextInt();
+        int x;
+        if (fmonth == 2){
+             x=31;
+        }
+        else if (fmonth==3){
+             x= 59;
+        }
+        else if (fmonth==4){
+             x = 90;
+        }
+        else if (fmonth ==5){
+             x = 120;
+        }
+        else if (fmonth==6){
+             x = 151;
+        }
+        else if (fmonth == 7){
+             x = 181;
+        }
+        else if (fmonth == 8){
+             x = 212;
+        }
+        else if (fmonth == 9){
+             x = 242;
+        }
+        else if (fmonth == 10){
+             x = 273;
+        }
+        else if (fmonth == 11){
+             x = 303;
+        }
+        else if (fmonth == 12){
+             x = 334;
+        }
+        today = x + fday;
+        int y;
+        if (month == 2){
+            y=31;
+       }
+       else if (month==3){
+            y= 59;
+       }
+       else if (month==4){
+            y = 90;
+       }
+       else if (month ==5){
+            y = 120;
+       }
+       else if (month==6){
+            y = 151;
+       }
+       else if (month == 7){
+            y = 181;
+       }
+       else if (month == 8){
+            y = 212;
+       }
+       else if (month == 9){
+            y = 242;
+       }
+       else if (month == 10){
+            y = 273;
+       }
+       else if (month == 11){
+            y = 303;
+       }
+       else if (month == 12){
+            y = 334;
+       }
+        birthone= y+day;
+        int z;
+        if (smonth == 2){
+            z=31;
+       }
+       else if (smonth==3){
+            z= 59;
+       }
+       else if (smonth==4){
+            z = 90;
+       }
+       else if (smonth ==5){
+            z = 120;
+       }
+       else if (smonth==6){
+            z = 151;
+       }
+       else if (smonth == 7){
+            z = 181;
+       }
+       else if (smonth == 8){
+            z = 212;
+       }
+       else if (smonth == 9){
+            z = 242;
+       }
+       else if (smonth == 10){
+            z = 273;
+       }
+       else if (smonth == 11){
+            z = 303;
+       }
+       else if(smonth == 12){
+            z = 334;
+       }
+       birthtwo= z+sday;
+       System.out.println("It will be "+(birthone-today)+" days until the first person's birthday.");
+       System.out.println("It will be "+(birthtwo-today)+" days until the first person's birthday.");
+       int first = birthone-today;
+       int second= birthtwo-today;
+       if (first>second){
+           System.out.print("The second persons birthday is sooner.");
+       }
+       else {
+        System.out.print("The first persons birthday is sooner.");
+       }
+    }
+}
