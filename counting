@@ -5,13 +5,13 @@ public class counting {
     public static void main(String [] arg) 
     {   
         Scanner input = new Scanner(System.in); 
-        int number = 1 + (int)(100* Math.random());  
+        int number = (int)(100* Math.random());  
         int count = 10;
-        int gue, guess; 
+        int gue;
+        int guess; 
   
         System.out.println( 
-            "A number is chosen between 1 to 100. "
-            + "Guess the number in " + count+ " times."); 
+            "A number is chosen between 1 to 100. " + "You have "+ count+ " tries."); 
         for (gue = 0; gue < count; gue++) { 
   
             System.out.println( 
