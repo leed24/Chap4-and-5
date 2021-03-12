@@ -20,7 +20,7 @@ public class counting {
   
             if (number == guess) { 
                 System.out.println( 
-                    "Congratulations! You guessed the number."); 
+                    "You guessed the number!"); 
                 break; 
             } 
             else if (number > guess && gue != count - 1) { 
@@ -35,7 +35,7 @@ public class counting {
   
         if (gue == count) { 
             System.out.println( 
-                "You have exhausted" +count+ " trials."); 
+                "You have ran out of your "+ count + " guesses." ); 
   
             System.out.println( 
                 "The number was " + number); 
