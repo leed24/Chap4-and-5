@@ -2,12 +2,8 @@ import java.util.Scanner;
   
 public class counting { 
     
-    public static void main(String arg[]) 
-    { 
-  
-        guessing(); 
-    } 
-    public static void guessing()   {  
+    public static void main(String [] arg) 
+    {   
         Scanner input = new Scanner(System.in); 
         int number = 1 + (int)(100* Math.random());  
         int count = 10;
